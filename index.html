@@ -8,514 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            /* outline: 1px solid white; */
-        }
-
-        *:focus {
-            outline: none;
-        }
-
-        body {
-            background-color: #003827;
-            color: white;
-            font-family: 'Metamorphous';
-        }
-
-        nav {
-            display: flex;
-            background-color: #00271C;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-            height: 70px;
-            box-shadow: 0px 10px 20px greenyellow;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav ul a {
-            text-decoration: none;
-        }
-
-        nav ul a li {
-            color: white;
-            margin: 0 20px;
-        }
-
-        .left {
-            margin-left: 50px;
-            font-size: 1.3rem;
-        }
-
-        .right {
-            margin-right: 50px;
-            font-size: 0.8rem;
-        }
-
-        #menu {
-            position: absolute;
-            left: 80vw;
-            opacity: -1;
-        }
-        label img{
-            position: absolute;
-            opacity: -1;
-        }
-
-        nav ul a li:hover {
-            color: rgb(27, 255, 27);
-        }
-
-        .first {
-            margin: 40px 70px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .leftSection {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            font-size: 2rem;
-            /* background-color: red; */
-        }
-
-        .name,
-        #element {
-            color: rgb(72, 255, 72);
-        }
-
-        .rightSection {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            /* background-color: red; */
-        }
-
-        .rightSection img {
-            max-width: 320px;
-        }
-
-        hr {
-            border: none;
-            height: 0.16rem;
-            background-color: rgb(72, 255, 72);
-            width: 90%;
-            margin: auto;
-        }
-
-        .second,
-        .third,
-        .fourth,
-        .five {
-            display: flex;
-            flex-direction: column;
-            margin: 40px 70px;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .session {
-            color: greenyellow;
-        }
-
-        .Heading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .Heading img {
-            margin: 0 20px;
-            width: 50px;
-            filter: drop-shadow(0px 2px 8px black);
-        }
-
-        .Heading h1 {
-            font-size: 1.7rem;
-        }
-
-        .certificates {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 20px;
-            padding: 10px 10px;
-            outline: 1px solid greenyellow;
-        }
-
-        .card img{
-            width: 300px;
-        }
-
-        .card:hover {
-            box-shadow: 10px 10px 10px greenyellow;
-            cursor: pointer;
-        }
-
-        .card p {
-            margin-top: 15px;
-        }
-
-        .five .form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .five .form input,
-        textarea {
-            margin-bottom: 10px;
-            padding: 5px 10px;
-            font-size: 8px;
-            background-color: #003827;
-            font-family: 'metamorphous';
-            width: 62%;
-            border-radius: 10px;
-            border: none;
-            color: greenyellow;
-            border: 1px solid greenyellow;
-            /* box-shadow: 10px 10px 10px black; */
-        }
-
-        .inline {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            /* width: min-content; */
-            width: 100%;
-            /* outline: 1px solid black; */
-        }
-
-        .five-main {
-            display: flex;
-            width: 90%;
-            justify-content: space-around;
-            margin: 50px 0;
-        }
-
-        #submit {
-            margin: 30px 0;
-            padding: 10px 10px;
-            border-radius: 20px;
-            background-color: #003827;
-            border: 1px solid greenyellow;
-            color: white;
-            font-family: 'metamorphous';
-        }
-
-        #submit:hover {
-            cursor: pointer;
-            box-shadow: 0 0 10px greenyellow;
-        }
-
-        /* 
-        .form,
-        .handles {
-            outline: 1px solid white;
-        } */
-
-        .handles {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .credits {
-            display: flex;
-            flex-direction: column;
-            margin: 20px 0;
-        }
-
-        .credits span {
-            color: grey;
-            font-size: 10px;
-        }
-
-        .ids a {
-            margin: 0 10px;
-        }
-
-        .ids a img {
-            width: 40px;
-        }
-
-        .ids a:hover {
-            filter: drop-shadow(0 0 10px greenyellow);
-        }
-
-        @media only screen and (max-width: 1190px) {
-            .leftSection {
-                font-size: 1.5rem;
-            }
-
-            .rightSection img {
-                width: 270px;
-            }
-        }
-
-        @media only screen and (max-width: 940px) {
-            .leftSection {
-                font-size: 1.2rem;
-            }
-
-            .left {
-                font-size: 1rem;
-            }
-
-            .right {
-                font-size: 0.6rem;
-            }
-
-            .Heading h1 {
-                font-size: 1.4rem;
-            }
-
-            .second ul li {
-                font-size: 0.9rem;
-            }
-
-            .rightSection img {
-                width: 250px;
-            }
-
-            .form {
-                font-size: 0.7rem;
-            }
-
-            .ids a img {
-                width: 30px;
-            }
-
-            .form input {
-                width: 10px;
-            }
-
-            .form textarea {
-                width: 200px;
-            }
-        }
-
-        @media only screen and (max-width: 780px) {
-            .left {
-                font-size: 0.8rem;
-            }
-
-            .right {
-                font-size: 0.45rem;
-            }
-
-            nav {
-                height: 50px;
-            }
-
-            .leftSection {
-                font-size: 1rem;
-            }
-
-            .rightSection img {
-                width: 220px;
-            }
-
-            .first {
-                margin: 20px 50px;
-            }
-
-            .five-main {
-                flex-direction: column;
-            }
-
-            .form textarea {
-                width: 61%;
-            }
-        }
-
-        @media only screen and (max-width: 650px) {
-            .first {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .leftSection {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 140px;
-                width: 100%;
-            }
-
-            .right{
-                display: flex;
-                align-items: center;
-            }
-
-            .right ul {
-                display: none;
-                text-align: center;
-                flex-direction: column;
-                position: absolute;
-                top: 50px;
-                right: 0;
-                left: 0;
-                background-color: #001a12;
-                margin-right: auto;
-                margin-left: auto;
-                outline: 1px solid black;
-                font-size: 10px;
-                z-index: -1;
-                transition: 0.9s ease-in-out;
-            }
-            .right ul a{
-                padding: 10px 10px;
-            }
-            .right ul a:hover{
-                background-color: #05291e;
-            }
-
-            .left {
-                position: absolute;
-            }
-
-            #menu {
-                opacity: 1;
-                position: absolute;
-                top: 3vh;
-                right: 8vh;
-                display: none;
-                background-color: transparent;
-                border: none;
-            }
-            #menu:hover{
-                cursor: pointer;
-            }
-
-            label img{
-                position: absolute;
-                top: 1.5vh;
-                right: 8vw;
-                opacity: 1;
-                width: 35px;
-            }
-            label img:hover{
-                cursor: pointer;
-            }
-
-            #menu:checked ~ ul{
-                display: flex;
-            }
-
-            .Heading h1 {
-                font-size: 1rem;
-            }
-
-            .second ul li {
-                font-size: 0.7rem;
-            }
-
-            .card img {
-                width: 250px;
-            }
-
-            .card p {
-                font-size: 0.7rem;
-            }
-
-            .form input,
-            .form label,
-            button {
-                font-size: 0.5rem;
-            }
-        }
-
-        @media only screen and (max-width: 460px) {
-            .left {
-                font-size: 0.6rem;
-                margin-left: 30px;
-            }
-
-            .right {
-                margin-left: 30px;
-            }
-
-            .leftSection {
-                font-size: 0.8rem;
-            }
-
-            .rightSection img {
-                width: 180px;
-            }
-
-            .five {
-                margin: 30px 20px;
-            }
-        }
-
-        @media only screen and (max-width: 370px) {
-            .right {
-                width: 20px;
-            }
-
-            .five {
-                margin: 25px 10px
-            }
-
-            .rightSection img {
-                width: 150px;
-            }
-
-            .second ul li {
-                font-size: 0.6rem;
-            }
-
-            .card img {
-                width: 200px;
-            }
-
-            .card p {
-                font-size: 0.6rem;
-            }
-
-            .form .inline input{
-                width: 90%;
-            }
-            .form label{
-                display: none;
-            }
-            .form textarea{
-                width: 90%;
-            }
-
-            .five {
-                width: 70%;
-                margin: auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    <link rel="stylesheet" href="Stylesheets/responsive.css">
 </head>
 
 <body>
@@ -581,7 +75,7 @@
                     alt="">
                 <p>Web Developement</p>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <img src="Certificates/1.jpg"
                     alt="">
                 <p>Sample</p>
@@ -590,7 +84,7 @@
                 <img src="Certificates/2.jpg"
                     alt="">
                 <p>Sample</p>
-            </div>
+            </div> -->
         </div>
     </section>
     <hr>
@@ -599,14 +93,41 @@
             <h1>Services</h1>
             <img src="services.png" alt="">
         </div>
+        <div class="container">
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/2721/2721725.png" alt="Web">
+                <h2>Web Services</h2>
+                <p>Elevate Your Online Presence with Our Premier Web Services. Explore Excellence Today!</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/7425/7425907.png " alt="Web">
+                <h2>Graphics</h2>
+                <p>Transform Your Vision into Vibrant Reality with Our Bold and Breathtaking Graphics!</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920329.png" alt="Web">
+                <h2>App Developement</h2>
+                <p>Unlock the Power of Innovation: Elevate Your Business with Our Bespoke App Development Solutions!</p>
+            </div>
+        </div>
 
     </section>
     <hr>
     <section class="fourth">
         <div class="Heading">
             <h1>Projects</h1>
-            <img src="	https://www.freeiconspng.com/uploads/upload-folder-document-file-upload-upload-document-icon-27.png"
+            <img src="https://www.freeiconspng.com/uploads/upload-folder-document-file-upload-upload-document-icon-27.png"
                 alt="">
+        </div>
+        <div class="container">
+            <div class="box2">
+                <a href="https://trainingroom.netlify.app/" target="_blank"><img src="Site1.png" alt=""></a>
+                <h2>Training Room</h2>
+            </div>
+            <div class="box2">
+                <a href="https://carvaultcollections.onrender.com/" target="_blank"><img src="Site2.png" alt=""></a>
+                <h2>Car Vault Collections</h2>
+            </div>
         </div>
     </section>
     <hr>
@@ -655,41 +176,9 @@
     </section>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Flutter Developer', 'Web Designer', 'Hackerrank Coder'],
-            typeSpeed: 60,
-            loop: true
-        });
-    </script>
-
-    <script>
-        const name = document.querySelector("#name")
-        const email = document.querySelector("#email")
-        const phone = document.querySelector("#phn")
-        const msg = document.querySelector("#desc")
-
-        function Mail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "saxenaakshar07@gmail.com",
-                Password: "D57CC58291EF44A48EBC60E3409549EE2B2A",
-                To: "saxenaakshar07@gmail.com",
-                From: "saxenaakshar07@gmail.com",
-                Subject: "Support from PortDevAkshar Website",
-                Body: "hello"
-            }).then(
-                message => alert(message)
-            );
-            alert(name.value)
-        }
-
-    </script>
+    <script src="scripts/font.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

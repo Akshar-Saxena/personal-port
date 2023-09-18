@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #003827;
+    color: white;
+    font-family: 'Metamorphous';
+}
+
+nav {
+    display: flex;
+    background-color: #00271C;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    height: 70px;
+    box-shadow: 0px 10px 20px greenyellow;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a li {
+    color: white;
+    margin: 0 20px;
+}
+
+.left {
+    margin-left: 50px;
+    font-size: 1.3rem;
+}
+
+.right {
+    margin-right: 50px;
+    font-size: 0.8rem;
+}
+
+#menu {
+    position: absolute;
+    left: 80vw;
+    opacity: -1;
+}
+
+label img {
+    position: absolute;
+    opacity: -1;
+    z-index: -1;
+}
+
+nav ul a li:hover {
+    color: rgb(27, 255, 27);
+}
+
+.first {
+    margin: 40px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.name,
+#element {
+    color: rgb(72, 255, 72);
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.rightSection img {
+    max-width: 320px;
+}
+
+hr {
+    border: none;
+    height: 0.16rem;
+    background-color: rgb(72, 255, 72);
+    width: 90%;
+    margin: auto;
+}
+
+.second,
+.third,
+.fourth,
+.five {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.session {
+    color: greenyellow;
+}
+
+.Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.Heading img {
+    margin: 0 20px;
+    width: 50px;
+    filter: drop-shadow(0px 2px 8px black);
+}
+
+.Heading h1 {
+    font-size: 1.7rem;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    outline: 1px solid greenyellow;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px greenyellow;
+    cursor: pointer;
+}
+
+.card p {
+    margin-top: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.box img{
+    width: 80px;
+    color: white;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    outline: 1px solid chartreuse;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.box:hover{
+    filter: drop-shadow(0 0 10px black);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.box h2{
+    font-size: 18px;
+    color: chartreuse;
+}
+.box p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    outline: 1px solid chartreuse;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px black);
+    transition: 0.2s ease-in-out;
+}
+.box2 a img{
+    width: 350px;
+}
+
+.box2 h2{
+    font-size: 18px;
+    color: chartreuse;
+}
+
+.box2:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.five .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.five .form input,
+textarea {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #003827;
+    font-family: 'metamorphous';
+    width: 62%;
+    border-radius: 10px;
+    border: none;
+    color: greenyellow;
+    border: 1px solid greenyellow;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.five-main {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+#submit {
+    margin: 30px 0;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #003827;
+    border: 1px solid greenyellow;
+    color: white;
+    font-family: 'metamorphous';
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+
+.handles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.credits span {
+    color: grey;
+    font-size: 10px;
+}
+
+.ids a {
+    margin: 0 10px;
+}
+
+.ids a img {
+    width: 40px;
+}
+
+.ids a:hover {
+    filter: drop-shadow(0 0 10px greenyellow);
+}

@@ -1,0 +1,268 @@
+
+@media only screen and (max-width: 1190px) {
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .rightSection img {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .leftSection {
+        font-size: 1.2rem;
+    }
+
+    .left {
+        font-size: 1rem;
+    }
+
+    .right {
+        font-size: 0.6rem;
+    }
+
+    .Heading h1 {
+        font-size: 1.4rem;
+    }
+
+    .second ul li {
+        font-size: 0.9rem;
+    }
+
+    .rightSection img {
+        width: 250px;
+    }
+
+    .form {
+        font-size: 0.7rem;
+    }
+
+    .ids a img {
+        width: 30px;
+    }
+
+    .form input {
+        width: 10px;
+    }
+
+    .form textarea {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .left {
+        font-size: 0.8rem;
+    }
+
+    .right {
+        font-size: 0.45rem;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    .leftSection {
+        font-size: 1rem;
+    }
+
+    .rightSection img {
+        width: 220px;
+    }
+
+    .first {
+        margin: 20px 50px;
+    }
+
+    .five-main {
+        flex-direction: column;
+    }
+
+    .form textarea {
+        width: 61%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .first {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+    }
+
+    .right ul {
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        left: 0;
+        background-color: #001a12;
+        margin-right: auto;
+        margin-left: auto;
+        outline: 1px solid black;
+        font-size: 10px;
+        z-index: -1;
+        transition: 0.9s ease-in-out;
+    }
+    .right ul a{
+        padding: 10px 10px;
+    }
+    .right ul a:hover{
+        background-color: #05291e;
+    }
+
+    .left {
+        position: absolute;
+    }
+
+    #menu {
+        opacity: 1;
+        position: absolute;
+        top: 3vh;
+        right: 8vh;
+        display: none;
+        background-color: transparent;
+        border: none;
+    }
+    #menu:hover{
+        cursor: pointer;
+    }
+
+    label img{
+        position: absolute;
+        top: 1.5vh;
+        right: 8vw;
+        opacity: 1;
+        width: 35px;
+    }
+    label img:hover{
+        cursor: pointer;
+    }
+
+    #menu:checked ~ ul{
+        display: flex;
+    }
+
+    .Heading h1 {
+        font-size: 1rem;
+    }
+
+    .second ul li {
+        font-size: 0.7rem;
+    }
+
+    .card img {
+        width: 250px;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
+
+    .form input,
+    .form label,
+    button {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .left {
+        font-size: 0.6rem;
+        margin-left: 30px;
+    }
+
+    .right {
+        margin-left: 30px;
+    }
+
+    .leftSection {
+        font-size: 0.8rem;
+    }
+
+    .rightSection img {
+        width: 180px;
+    }
+
+    .five {
+        margin: 30px 20px;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .box{
+        margin: 15px 0;
+    }
+    .box2 a img{
+        width: 200px;
+    }
+    .box h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .box p{
+        font-size: 13px;
+    }
+    .box2 h2{
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .right {
+        width: 20px;
+    }
+
+    .five {
+        margin: 25px 10px
+    }
+
+    .rightSection img {
+        width: 150px;
+    }
+
+    .second ul li {
+        font-size: 0.6rem;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .card p {
+        font-size: 0.6rem;
+    }
+
+    .form .inline input{
+        width: 90%;
+    }
+    .form label{
+        display: none;
+    }
+    .form textarea{
+        width: 90%;
+    }
+
+    .five {
+        width: 70%;
+        margin: auto;
+    }
+}
